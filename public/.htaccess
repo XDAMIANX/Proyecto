@@ -1,0 +1,28 @@
+DirectoryIndex index.php?r=home/index
+ErrorDocument 404 http://proyecto.local/index.php?r=home/error
+RewriteEngine on
+RewriteRule ^index$ index.php?r=home/index [L]
+ RewriteRule ^index/id/([0-9]+)$ index.php?r=home/index&id=$1 [L]
+ RewriteRule ^index/id/([0-9]+)/title/([a-zA-Z]+)$ index.php?r=home/index&id=$1&title=$2 [L]
+ RewriteRule ^login$ index.php?r=home/login [L]
+ RewriteRule ^admin$ index.php?r=admin/admin [L]
+ RewriteRule ^usuario$ index.php?r=usuario/usuario [L]
+ RewriteRule ^usuario/id/([0-9]+)$ index.php?r=usuario/usuario&id=$1 [L]
+ RewriteRule ^usuario/id/([0-9]+)/title/([a-zA-Z]+)$ index.php?r=usuario/usuario&id=$1&title=$2 [L]
+ RewriteRule ^producto$ index.php?r=producto/producto [L]
+ RewriteRule ^producto/id/([0-9]+)$ index.php?r=producto/producto&id=$1 [L]
+ RewriteRule ^producto/id/([0-9]+)/title/([a-zA-Z]+)$ index.php?r=producto/producto&id=$1&title=$2 [L]
+ RewriteRule ^productoEditar$ index.php?r=producto/productoEditar [L]
+ RewriteRule ^productoEditar/id/([0-9]+)$ index.php?r=producto/productoEditar&id=$1 [L]
+ RewriteRule ^productoEditar/id/([0-9]+)/title/([a-zA-Z]+)$ index.php?r=producto/productoEditar&id=$1&title=$2 [L]
+ RewriteRule ^categoria$ index.php?r=categoria/categoria [L]
+ RewriteRule ^usuarioEditar$ index.php?r=usuario/usuarioEditar [L]
+ RewriteRule ^usuarioEditar/id/([0-9]+)$ index.php?r=usuario/usuarioEditar&id=$1 [L]
+ RewriteRule ^usuarioEditar/id/([0-9]+)/title/([a-zA-Z]+)$ index.php?r=usuario/usuarioEditar&id=$1&title=$2 [L]
+ RewriteRule ^usuarioReporte$ index.php?r=usuario/usuarioReporte [L]
+ RewriteRule ^usuarioReporte/t/([a-zA-Z]+)$ index.php?r=usuario/usuarioReporte&t=$1 [L]
+ RewriteRule ^usuarioEditar/id/([0-9]+)/title/([a-zA-Z]+)$ index.php?r=usuario/usuarioEditar&id=$1&title=$2 [L]
+ RewriteRule ^usuarioFormato$ index.php?r=reporte/usuarioFormato [L]
+ RewriteRule ^usuarioFormato/t/([a-zA-Z]+)$ index.php?r=reporte/usuarioFormato&t=$1 [L]
+ RewriteRule ^usuarioFormato/t/([a-zA-Z]+)/c/$ index.php?r=reporte/usuarioFormato&t=$1&c=$2 [L]
+ 
